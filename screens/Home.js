@@ -18,10 +18,17 @@ const Home = () => {
   // get data from the fake api
   useEffect(() => {
     const getData = async () => {
-      const apiResponse = await fetch(
-        "https://my-json-server.typicode.com/kevintomas1995/logRocket_searchBar/languages"
-      );
-      const data = await apiResponse.json();
+      // const apiResponse = await fetch(
+      //   "https://my-json-server.typicode.com/kevintomas1995/logRocket_searchBar/languages"
+      // );
+      // const data = await apiResponse.json();
+
+      // instead of fetching data from the api, we will read the db.json file
+      // and use the data from there
+      const data = require("../db.json").cafes;
+      
+
+
       setFakeData(data);
     };
     getData();
@@ -29,7 +36,7 @@ const Home = () => {
 
   return (
     <SafeAreaView style={styles.root}>
-      {!clicked && <Text style={styles.title}>Programming Languages</Text>}
+      {!clicked && <Text style={styles.title}>Coffee Shop</Text>}
 
       <SearchBar
         searchPhrase={searchPhrase}
@@ -58,6 +65,7 @@ const styles = StyleSheet.create({
   root: {
     justifyContent: "center",
     alignItems: "center",
+    marginTop: 50,
   },
   title: {
     width: "100%",

@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, TextInput, View, Keyboard, Button } from "react-native";
+import { StyleSheet, TextInput, View, Keyboard, TouchableOpacity, Text } from "react-native";
 import { Feather, Entypo } from "@expo/vector-icons";
 
 
@@ -20,6 +20,8 @@ const SearchBar = (props) => {
           color="black"
           style={{ marginLeft: 1 }}
         />
+
+        {/* search input */}
         <TextInput
           style={styles.input}
           placeholder="Search"
@@ -30,22 +32,25 @@ const SearchBar = (props) => {
           }}
         />
         
+        {/* cancel Icon */}
         {props.clicked && (
           <Entypo name="cross" size={20} color="black" style={{ padding: 1 }} onPress={() => {
               props.setSearchPhrase("")
           }}/>
         )}
       </View>
-      {props.clicked && (
-        <View>
-          <Button
-            style={{ color: "red" }}
-            title="Cancel"
-            onPress={() => {
-              Keyboard.dismiss();
-              props.setClicked(false);
-            }}
-          ></Button>
+
+        {/* cancel button */}
+        {props.clicked && (
+            <View style={styles.appButtonContainer}>
+            <TouchableOpacity
+                onPress={() => {
+                Keyboard.dismiss();
+                props.setClicked(false);
+                }}
+            >
+            <Text>Cancel</Text>
+          </TouchableOpacity>
         </View>
       )}
     </View>
@@ -61,7 +66,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flexDirection: "row",
     width: "90%",
-    
   },
   searchBar__unclicked: {
     padding: 10,
@@ -84,5 +88,12 @@ const styles = StyleSheet.create({
     fontSize: 20,
     marginLeft: 10,
     width: "90%",
+  },
+  appButtonContainer: {
+    elevation: 8,
+    backgroundColor: "#c5a28e",
+    borderRadius: 10,
+    paddingVertical: 10,
+    paddingHorizontal: 12
   },
 });

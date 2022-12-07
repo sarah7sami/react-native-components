@@ -1,50 +1,46 @@
 {
-    "languages": [
-      {
-        "id": "1",
-        "name": "JavaScript",
-        "tag": "Web Dev, Game Dev, Mobile Apps"
-      },
-      {
-        "id": "2",
-        "name": "Python",
-        "tag": "BackEnd, Data Science"
-      },
-      {
-        "id": "3",
-        "name": "Java",
-        "tag": "App Dev, E-Commerce"
-      },
-      {
-        "id": "4",
-        "name": "SQL",
-        "tag": "Databases"
-      },
-      {
-        "id": "5",
-        "name": "NoSQL",
-        "tag": "Databases"
-      },
-      {
-        "id": "6",
-        "name": "C#",
-        "tag": "Game Dev, Desktop Apps, Mobile Apps"
-      },
-      {
-        "id": "7",
-        "name": "Rust",
-        "tag": "Operating Systems, VR, Web Browsers"
-      },
-      {
-        "id": "8",
-        "name": "Perl",
-        "tag": "System Administration, GUI Development"
-      },
-      {
-        "id": "9",
-        "name": "GO",
-        "tag": "System Programming, Audio Editing, Big Data"
-      }
-    ]
+    "cafes": [{"id":"b2bb0565-1fd4-4fcd-b909-93744f661c7c","name":"Zoonder","tags":"Griffon vulture"},
+    {"id":"fbe0d99b-b03e-4570-87b2-a2d58e7b99c7","name":"Voonyx","tags":"Yellow-throated sandgrouse"},
+    {"id":"9d74702e-2503-4cc1-9e40-f51aea57a502","name":"Eamia","tags":"Kafue flats lechwe"},
+    {"id":"1710bb22-7f99-4f87-b1f9-a83367d7f3d0","name":"Chatterpoint","tags":"Giant girdled lizard"},
+    {"id":"d5433106-e3f0-4601-b714-10eeed7633aa","name":"Twinte","tags":"Turkey, wild"},
+    {"id":"35389879-913f-4281-85e6-1f5929428b9f","name":"Aivee","tags":"Chilean flamingo"},
+    {"id":"05ff1f2b-a022-48f8-8954-ceae90be7ddc","name":"Vipe","tags":"Tiger cat"},
+    {"id":"145f37ef-4f65-47da-8396-891bd60622df","name":"Devify","tags":"Quoll, spotted-tailed"},
+    {"id":"bc11c22f-20f2-405f-87b1-50d04a8e519c","name":"Zooveo","tags":"White-eye, pale"},
+    {"id":"cdbe2ed7-730d-4359-b6f2-569a516e3257","name":"Skilith","tags":"European badger"},
+    {"id":"72e4331c-9c10-4211-abaf-2c4c02da1b3f","name":"Lazz","tags":"Tsessebe"},
+    {"id":"961ffe8b-7372-477b-b7d7-7b4736cdf705","name":"Edgewire","tags":"Spoonbill, white"},
+    {"id":"7d78d11f-9a43-4430-8e84-05e47f5c854f","name":"Aivee","tags":"Dragon, frilled"},
+    {"id":"403544be-60ac-498c-8e8a-891fe88bb726","name":"Twinder","tags":"Ornate rock dragon"},
+    {"id":"c004a08a-0df2-4c6b-a1b6-ce8f355fec42","name":"Oyonder","tags":"Black-faced kangaroo"},
+    {"id":"08437222-0f2d-4686-a158-615aa7ca89cc","name":"Einti","tags":"Porcupine, tree"},
+    {"id":"7a094e19-08fa-4a77-9ce4-08e24e115c67","name":"Vi doo","tags":"Two-toed tree sloth"},
+    {"id":"38b99608-1a17-48b5-86f2-f63c28d2605f","name":"Dabvine","tags":"Snowy sheathbill"},
+    {"id":"76417e65-81d9-491b-b52a-0c50dd465a3c","name":"Lazzy","tags":"Red lava crab"},
+    {"id":"97c9f3ab-3ffd-4b85-9a7f-7aa083761f2b","name":"Edgewire","tags":"Racer, american"},
+    {"id":"07d3fef4-4ca9-4424-bbd0-eeacf88233c6","name":"Geba","tags":"Cape raven"},
+    {"id":"3696ae47-9d0c-4707-a41b-d4ff4b2574a4","name":"Edgeify","tags":"Tsessebe"},
+    {"id":"e945aaba-0f8e-4854-a1a0-c6b28cdc8d24","name":"Youopia","tags":"Duiker, gray"},
+    {"id":"417df37b-b480-4590-8cc4-d4b70cbcc6f4","name":"Skinder","tags":"Turkey vulture"},
+    {"id":"3f37d85b-2e48-4738-bb13-16dcad5471ff","name":"Jamia","tags":"Arctic lemming"},
+    {"id":"1e31a137-1a94-4fce-8a31-973802cb7c2d","name":"Zooxo","tags":"Common shelduck"},
+    {"id":"0b70beff-f734-4461-9acf-4c1f38f40c1a","name":"Brainverse","tags":"Huron"},
+    {"id":"43cdab77-54de-4dc8-9335-76cf79fbb6cb","name":"Browsebug","tags":"Sparrow, house"},
+    {"id":"ba8c0f6f-cc7a-45be-814a-3f518c93168e","name":"Dynazzy","tags":"Gull, swallow-tail"},
+    {"id":"cb41f418-0135-46aa-92a0-fd642b1597af","name":"Shuffletag","tags":"Large-eared bushbaby"},
+    {"id":"3c999545-9e5a-437b-96f9-60c1822f0aea","name":"Katz","tags":"Wombat, southern hairy-nosed"},
+    {"id":"28762678-14ab-4824-9d34-f2f640f6eba4","name":"Jabbersphere","tags":"Tyrant flycatcher"},
+    {"id":"10a1626d-d437-4014-b56a-a5a85c2f99b3","name":"Pixoboo","tags":"Royal tern"},
+    {"id":"c74ed4b5-000f-4021-9086-5d10496ee671","name":"Voolia","tags":"Knob-nosed goose"},
+    {"id":"8ba14527-862b-4cf6-8364-2e473dd4d5ae","name":"Brightdog","tags":"Common genet"},
+    {"id":"4f2071e8-451b-4c1e-b5ca-921ec2a4729f","name":"Oyoloo","tags":"Crocodile, nile"},
+    {"id":"45ad5d64-362d-42d9-8c97-4d271a1812d4","name":"Lazzy","tags":"Monkey, red howler"},
+    {"id":"ed9b33bc-b22c-4a30-a283-b7ff8a34bc24","name":"Thoughtmix","tags":"Pampa gray fox"},
+    {"id":"22f1beb4-89b5-44b9-9d1a-97f4cae5fd58","name":"Realmix","tags":"Ant (unidentified)"},
+    {"id":"99063e83-e3ff-4806-8956-5d2cdbe0e9b8","name":"Vinder","tags":"Boa, malagasy ground"},
+    {"id":"41f45a62-bb8a-44de-8a3f-fbd5e3ba5e7b","name":"Voonyx","tags":"Shrew, mandras tree"},
+    {"id":"3bbdb610-196e-442f-9d07-74e4d3943add","name":"Skiptube","tags":"Lizard, frilled"},
+    {"id":"2c5e7d9d-6e29-465f-bfb8-f404c98e340f","name":"Zazio","tags":"White-faced whistling duck"}]
   }
   
