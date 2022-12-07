@@ -8,10 +8,10 @@ import {
 } from "react-native";
 
 // definition of the Item, which will be rendered in the FlatList
-const Item = ({ name, details }) => (
+const Item = ({ name, tag }) => (
   <View style={styles.item}>
     <Text style={styles.title}>{name}</Text>
-    <Text style={styles.details}>{details}</Text>
+    <Text style={styles.tag}>{tag}</Text>
   </View>
 );
 
@@ -20,15 +20,15 @@ const SampleList = (props) => {
   const renderItem = ({ item }) => {
     // when no input, show all
     if (props.searchPhrase === "") {
-      return <Item name={item.name} details={item.details} />;
+      return <Item name={item.name} tag={item.tag} />;
     }
     // filter of the name
     if (item.name.toUpperCase().includes(props.searchPhrase.toUpperCase().trim().replace(/\s/g, ""))) {
-      return <Item name={item.name} details={item.details} />;
+      return <Item name={item.name} tag={item.tag} />;
     }
     // filter of the description
-    if (item.details.toUpperCase().includes(props.searchPhrase.toUpperCase().trim().replace(/\s/g, ""))) {
-      return <Item name={item.name} details={item.details} />;
+    if (item.tag.toUpperCase().includes(props.searchPhrase.toUpperCase().trim().replace(/\s/g, ""))) {
+      return <Item name={item.name} tag={item.tag} />;
     }
   };
 
