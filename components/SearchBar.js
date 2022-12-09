@@ -35,24 +35,12 @@ const SearchBar = (props) => {
         {/* cancel Icon */}
         {props.clicked && (
           <Entypo name="cross" size={20} color="black" style={{ padding: 1 }} onPress={() => {
+              Keyboard.dismiss();
               props.setSearchPhrase("")
+              props.setClicked(false);
           }}/>
         )}
       </View>
-
-        {/* cancel button */}
-        {props.clicked && (
-            <View style={styles.appButtonContainer}>
-            <TouchableOpacity
-                onPress={() => {
-                Keyboard.dismiss();
-                props.setClicked(false);
-                }}
-            >
-            <Text>Cancel</Text>
-          </TouchableOpacity>
-        </View>
-      )}
     </View>
   );
 };
@@ -78,7 +66,7 @@ const styles = StyleSheet.create({
   searchBar__clicked: {
     padding: 10,
     flexDirection: "row",
-    width: "80%",
+    width: "95%",
     backgroundColor: "#d9dbda",
     borderRadius: 15,
     alignItems: "center",
