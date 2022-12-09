@@ -23,11 +23,11 @@ const SampleList = (props) => {
       return <Item name={item.name} tags={item.tags} />;
     }
     // filter of the name
-    if (item.name.toUpperCase().includes(props.searchPhrase.toUpperCase().trim().replace(/\s/g, ""))) {
+    if (item.name.toUpperCase().includes(props.searchPhrase.toUpperCase().trim().replace(/\s/g, "|"))) {
       return <Item name={item.name} tags={item.tags} />;
     }
     // filter of the description
-    if (item.tags.toUpperCase().includes(props.searchPhrase.toUpperCase().trim().replace(/\s/g, ""))) {
+    if (item.tags.toUpperCase().includes(props.searchPhrase.toUpperCase().trim().replace(/\s/g, "|"))) {
       return <Item name={item.name} tags={item.tags} />;
     }
   };
